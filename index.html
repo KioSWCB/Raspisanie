@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Расписание 67TM</title>
+
+  <script>
+    window.TARGET_DAY = 2;               <!-- 1..6 (1=Понедельник ... 6=Суббота) -->
+    window.DATE_TEXT = '(Неделя 1) 17:19 22.12';    <!-- "ЧЧ:ММ ДД.MM" -->
+  </script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="root" aria-label="Расписание на неделю">
+    <h1 class="visually-hidden">Расписание на неделю</h1>
+    <div class="container">
+      <div id="schedule-column" class="schedule-column" role="region" aria-label="Дни недели">
+
+        <!-- Понедельник -->
+        <section class="day" data-day="1" aria-labelledby="d1">
+          <h2 id="d1" class="day-title">
+            <span class="day-name">Понедельник</span>
+            <span class="day-date" aria-hidden="true"></span>
+          </h2>
+          <table class="day-table" role="table" aria-label="Понедельник">
+            <tbody>
+              <tr><th class="num">1</th><td class="cell" data-pair="1"><span class="primary">Инж.гра|24/22</span><span class="secondary"></span></td></tr>
+              <tr><th class="num">2</th><td class="cell" data-pair="2"><span class="primary">Инж.гра|24/22</span><span class="secondary"></span></td></tr>
+              <tr class="lunch"><th class="num"></th><td class="cell">Обед</td></tr>
+              <tr><th class="num">3</th><td class="cell" data-pair="3"><span class="primary">Физра</span><span class="secondary"></span></td></tr>
+              <tr><th class="num">4</th><td class="cell" data-pair="4"><span class="primary">Тех.механика|32</span><span class="secondary"></span></td></tr>
+              <tr><th class="num">5</th><td class="cell" data-pair="5"><span class="primary"></span><span class="secondary"></span></td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- Вторник -->
+        <section class="day" data-day="2" aria-labelledby="d2">
+          <h2 id="d2" class="day-title">
+            <span class="day-name">Вторник</span>
+            <span class="day-date" aria-hidden="true"></span>
+          </h2>
+          <table class="day-table" role="table" aria-label="Вторник">
+            <tbody>
+              <tr><th class="num">1</th><td class="cell" data-pair="1"><span class="primary"></span><span class="secondary">Инж.гра|22/24</span></td></tr>
+              <tr><th class="num">2</th><td class="cell" data-pair="2"><span class="primary">Астрономия|56</span><span class="secondary"></span></td></tr>
+              <tr class="lunch"><th class="num"></th><td class="cell">Обед</td></tr>
+              <tr><th class="num">3</th><td class="cell" data-pair="3"><span class="primary">История Бел.в|49</span><span class="secondary"></span></td></tr>
+              <tr><th class="num">4</th><td class="cell" data-pair="4"><span class="primary"></span><span class="secondary">Материаловед.|51</span></td></tr>
+              <tr><th class="num">5</th><td class="cell" data-pair="5"><span class="primary"></span><span class="secondary"></span></td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- Среда -->
+        <section class="day" data-day="3" aria-labelledby="d3">
+          <h2 id="d3" class="day-title">
+            <span class="day-name">Среда</span>
+            <span class="day-date" aria-hidden="true"></span>
+          </h2>
+          <table class="day-table" role="table" aria-label="Среда">
+            <tbody>
+              <tr><th class="num">1</th><td class="cell" data-pair="1"><span class="primary">Инж.гра|24/22</span><span class="secondary"></span></td></tr>
+              <tr><th class="num">2</th><td class="cell" data-pair="2"><span class="primary">Защ.нас.и терр|34</span><span class="secondary"></span></td></tr>
+              <tr class="lunch"><th class="num"></th><td class="cell">Обед</td></tr>
+              <tr><th class="num">3</th><td class="cell" data-pair="3"><span class="primary">Охрана труда|30</span><span class="secondary"></span></td></tr>
+              <tr><th class="num">4</th><td class="cell" data-pair="4"><span class="primary">Физра</span><span class="secondary"></span></td></tr>
+              <tr><th class="num">5</th><td class="cell" data-pair="5"><span class="primary"></span><span class="secondary"></span></td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- Четверг -->
+        <section class="day" data-day="4" aria-labelledby="d4">
+          <h2 id="d4" class="day-title">
+            <span class="day-name">Четверг</span>
+            <span class="day-date" aria-hidden="true"></span>
+          </h2>
+          <table class="day-table" role="table" aria-label="Четверг">
+            <tbody>
+              <tr><th class="num">1</th><td class="cell" data-pair="1"><span class="primary">Охрана труда|30</span><span class="secondary"></span></td></tr>
+              <tr><th class="num">2</th><td class="cell" data-pair="2"><span class="primary">История бел го|33</span><span class="secondary"></span></td></tr>
+              <tr class="lunch"><th class="num"></th><td class="cell">Обед</td></tr>
+              <tr><th class="num">3</th><td class="cell" data-pair="3"><span class="primary"></span><span class="secondary"></span></td></tr>
+              <tr><th class="num">4</th><td class="cell" data-pair="4"><span class="primary">История Бел.в|49</span><span class="secondary"></span></td></tr>
+              <tr><th class="num">5</th><td class="cell" data-pair="5"><span class="primary"></span><span class="secondary"></span></td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- Пятница -->
+        <section class="day" data-day="5" aria-labelledby="d5">
+          <h2 id="d5" class="day-title">
+            <span class="day-name">Пятница</span>
+            <span class="day-date" aria-hidden="true"></span>
+          </h2>
+          <table class="day-table" role="table" aria-label="Пятница">
+            <tbody>
+              <tr><th class="num">1</th><td class="cell" data-pair="1"><span class="primary">Материаловед.|51</span><span class="secondary"></span></td></tr>
+              <tr><th class="num">2</th><td class="cell" data-pair="2"><span class="primary">История Бел.в|49</span><span class="secondary"></span></td></tr>
+              <tr class="lunch"><th class="num"></th><td class="cell">Обед</td></tr>
+              <tr><th class="num">3</th><td class="cell" data-pair="3"><span class="primary">История бел го|33</span><span class="secondary"></span></td></tr>
+              <tr><th class="num">4</th><td class="cell" data-pair="4"><span class="primary">Курат. час|24</span><span class="secondary"></span></td></tr>
+              <tr><th class="num">5</th><td class="cell" data-pair="5"><span class="primary"></span><span class="secondary"></span></td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- Суббота -->
+        <section class="day" data-day="6" aria-labelledby="d6">
+          <h2 id="d6" class="day-title">
+            <span class="day-name">Суббота</span>
+            <span class="day-date" aria-hidden="true"></span>
+          </h2>
+          <table class="day-table" role="table" aria-label="Суббота">
+            <tbody>
+              <tr><th class="num">1</th><td class="cell" data-pair="1"><span class="primary"></span><span class="secondary"></span></td></tr>
+              <tr><th class="num">2</th><td class="cell" data-pair="2"><span class="primary">Тех.механика|32</span><span class="secondary"></span></td></tr>
+              <tr><th class="num">3</th><td class="cell" data-pair="3"><span class="primary">Нормир.точност|32</span><span class="secondary"></span></td></tr>
+              <tr><th class="num">4</th><td class="cell" data-pair="4"><span class="primary"></span><span class="secondary"></span></td></tr>
+            </tbody>
+          </table>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <script>
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const day = Number(window.TARGET_DAY);
+      const dateText = String(window.DATE_TEXT || '').trim();
+
+      if (!day || day < 1 || day > 6) return;
+
+      const card = document.querySelector('.day[data-day="' + day + '"]');
+      if (!card) return;
+
+      const dateSpan = card.querySelector('.day-date');
+      if (dateSpan) dateSpan.textContent = dateText;
+
+      card.classList.add('highlight');
+
+      card.querySelectorAll('.cell').forEach(cell => {
+        const sec = cell.querySelector('.secondary');
+        if (sec && sec.textContent.trim().length > 0) {
+          cell.classList.add('has-alt');
+        } else {
+          cell.classList.remove('has-alt');
+        }
+      });
+
+      setTimeout(() => {
+        card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 60);
+    });
+  </script>
+</body>
+</html>
